@@ -1,3 +1,4 @@
+import List from "../../components/List/List";
 import Featured from "../../components/Featured/Featured";
 import Navbar from "../../components/Navbar/Navbar";
 
@@ -8,6 +9,9 @@ const Home = () => {
     <div className="home">
       <Navbar />
       <Featured />
+      <List />
+      <List />
+      <List />
     </div>
   );
 };
