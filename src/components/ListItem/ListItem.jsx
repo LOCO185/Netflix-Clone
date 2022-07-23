@@ -1,9 +1,9 @@
 import "./ListItem.scss";
 
-import PlayArrowIcon from '@mui/icons-material/PlayArrow';
-import AddIcon from '@mui/icons-material/Add';
-import ThumbUpOutlinedIcon from '@mui/icons-material/ThumbUpOutlined';
-import ThumbDownOutlinedIcon from '@mui/icons-material/ThumbDownOutlined';
+import PlayArrowIcon from "@mui/icons-material/PlayArrow";
+import AddIcon from "@mui/icons-material/Add";
+import ThumbUpOutlinedIcon from "@mui/icons-material/ThumbUpOutlined";
+import ThumbDownOutlinedIcon from "@mui/icons-material/ThumbDownOutlined";
 
 const ListItem = () => {
   return (
@@ -18,6 +18,11 @@ const ListItem = () => {
           <AddIcon />
           <ThumbUpOutlinedIcon />
           <ThumbDownOutlinedIcon />
+          <div className="itemInfoTop">
+            <span>1 hour 14 mins</span>
+            <span className="limit">+16</span>
+            <span>1999</span>
+          </div>
         </div>
       </div>
     </div>
