@@ -1,4 +1,5 @@
-import React from "react";
+import "./Watch.scss";
+
 import ArrowBackIosNewOutlinedIcon from "@mui/icons-material/ArrowBackIosNewOutlined";
 
 const Watch = () => {
