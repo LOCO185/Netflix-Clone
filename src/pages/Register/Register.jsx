@@ -1,9 +1,19 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import "./Register.scss";
 
 const Register = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
+  const emailRef = useRef();
+  const passwordRef = useRef();
+
+  const handleStart = () => {
+    setEmail(emailRef.current.value);
+  };
+  const handleFinish = () => {
+    setPassword(passwordRef.current.value);
+  };
 
   return (
     <div className="register">
