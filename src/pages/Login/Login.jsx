@@ -2,7 +2,6 @@ import "./Login.scss";
 
 const Login = () => {
   return (
-    // Example
     <div className="login">
       <div className="top">
         <div className="wrapper">
