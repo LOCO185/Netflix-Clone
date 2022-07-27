@@ -6,9 +6,6 @@ import Login from "./pages/Login/Login";
 
 function App() {
   return <Home />;
-  // return <Register />;
-  // return <Watch />;
-  // return <Login />;
 }
 
 export default App;
