@@ -1,9 +1,7 @@
 const router = require("express").Router();
 const Movie = require("../models/Movie");
 
-
 // CREATE
-
 
 // UPDATE
 
@@ -14,3 +12,5 @@ const Movie = require("../models/Movie");
 // GET RANDOM
 
 // GET ALL
+
+module.exports = router;
