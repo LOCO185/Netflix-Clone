@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const User = require("../models/User");
 
-//REGISTER
+// REGISTER
 router.post("/register", async (req, res) => {
   const newUser = new User({
     username: req.body.username,
@@ -10,6 +10,6 @@ router.post("/register", async (req, res) => {
   });
 });
 
-//LOGIN
+// LOGIN
 
 module.exports = router;
