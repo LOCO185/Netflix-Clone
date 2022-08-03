@@ -5,8 +5,10 @@ const User = require("../models/User");
 
 // DELETE
 
-// GET 
+// GET
 
 // GET ALL
 
 // GET USER STATS
+
+module.exports = router;
