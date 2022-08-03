@@ -9,3 +9,7 @@ router.post("/register", async (req, res) => {
     // password
   });
 });
+
+//LOGIN
+
+module.exports = router;
