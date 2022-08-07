@@ -1,7 +1,8 @@
 const router = require("express").Router();
 const List = require("../models/List");
+const verify = require("../verifyToken");
 
-// CREATE
+//CREATE
 router.post("/", verify, async (req, res) => {
   if (req.user.isAdmin) {
     const newList = new List(req.body);
@@ -16,12 +17,12 @@ router.post("/", verify, async (req, res) => {
   }
 });
 
-// DELETE
+//DELETE
 router.delete("/:id", verify, async (req, res) => {
   if (req.user.isAdmin) {
     try {
       await List.findByIdAndDelete(req.params.id);
-      res.status(201).json("The list has been deleted...");
+      res.status(201).json("The list has been delete...");
     } catch (err) {
       res.status(500).json(err);
     }
@@ -30,7 +31,7 @@ router.delete("/:id", verify, async (req, res) => {
   }
 });
 
-// GET
+//GET
 router.get("/", verify, async (req, res) => {
   const typeQuery = req.query.type;
   const genreQuery = req.query.genre;
