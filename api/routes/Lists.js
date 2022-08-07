@@ -48,7 +48,7 @@ router.get("/", verify, async (req, res) => {
           { $match: { type: typeQuery } },
         ]);
       }
-    }
+    }}}
   
 
 module.exports = router;
