@@ -29,6 +29,7 @@ router.delete("/:id", verify, async (req, res) => {
     res.status(403).json("You are not allowed!");
   }
 });
+
 // GET
 
 module.exports = router;
