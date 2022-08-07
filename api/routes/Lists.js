@@ -31,5 +31,24 @@ router.delete("/:id", verify, async (req, res) => {
 });
 
 // GET
+router.get("/", verify, async (req, res) => {
+  const typeQuery = req.query.type;
+  const genreQuery = req.query.genre;
+  let list = [];
+  try {
+    if (typeQuery) {
+      if (genreQuery) {
+        list = await List.aggregate([
+          { $sample: { size: 10 } },
+          { $match: { type: typeQuery, genre: genreQuery } },
+        ]);
+      } else {
+        list = await List.aggregate([
+          { $sample: { size: 10 } },
+          { $match: { type: typeQuery } },
+        ]);
+      }
+    }
+  
 
 module.exports = router;
