@@ -13,8 +13,10 @@ mongoose
   .then(() => console.log("DB Connection Successfull !"))
   .catch((error) => console.log(error));
 
+  app.use(express.json());
+  
+  // add routes
+
 app.listen(8800, () => {
   console.log("Backend server is running !");
 });
-
-app.use(express.json());
