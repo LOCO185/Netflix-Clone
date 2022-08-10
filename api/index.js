@@ -13,9 +13,12 @@ mongoose
   .connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
+    useCreateIndex: true,
   })
-  .then(() => console.log("DB Connection Successfull !"))
-  .catch((error) => console.log(error));
+  .then(() => console.log("DB Connection Successfull"))
+  .catch((err) => {
+    console.error(err);
+  });
 
 app.use(express.json());
 
