@@ -1,2 +1,4 @@
 Change Wallpapers Background + Video on Register + Watch + Login
 Video on home page
+
+Fix Errors in development mode
