@@ -1,5 +1,5 @@
-import Navbar from "../../components/navbar/Navbar";
-import Featured from "../../components/featured/Featured";
+import Navbar from "../../components/Navbar/Navbar";
+import Featured from "../../components/Featured/Featured";
 import "./home.scss";
 import List from "../../components/list/List";
 import { useEffect, useState } from "react";
@@ -19,7 +19,8 @@ const Home = ({ type }) => {
           {
             headers: {
               token:
-              "Bearer "+JSON.parse(localStorage.getItem("user")).accessToken,
+                "Bearer " +
+                JSON.parse(localStorage.getItem("user")).accessToken,
             },
           }
         );
