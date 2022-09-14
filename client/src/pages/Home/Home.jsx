@@ -1,6 +1,6 @@
 import Navbar from "../../components/Navbar/Navbar";
 import Featured from "../../components/Featured/Featured";
-import "./home.scss";
+import "./Home.scss";
 import List from "../../components/list/List";
 import { useEffect, useState } from "react";
 import axios from "axios";
