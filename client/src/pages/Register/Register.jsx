@@ -2,7 +2,7 @@ import axios from "axios";
 import { useRef } from "react";
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
-import "./register.scss";
+import "./Register.scss";
 
 export default function Register() {
   const [email, setEmail] = useState("");
