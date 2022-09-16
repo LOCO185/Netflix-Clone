@@ -9,7 +9,7 @@ export default function Watch() {
     <div className="watch">
       <Link to="/">
         <div className="back">
-          <ArrowBack />
+          <ArrowBackIcon />
           Home
         </div>
       </Link>
